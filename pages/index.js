@@ -289,9 +289,9 @@ export default function Home() {
           <Container>
             <div className='my-5'>
             <Swiper autoplay={true} pagination={true} modules={[Pagination]} className="mySwiper">
-              <SwiperSlide><img src={'/img4.JPG'} /></SwiperSlide>
-              <SwiperSlide><img src={'/img4.JPG'} /></SwiperSlide>
-              <SwiperSlide><img src={'/img4.JPG'} /></SwiperSlide>
+              <SwiperSlide><img src={'/img4.jpg'} /></SwiperSlide>
+              <SwiperSlide><img src={'/img4.jpg'} /></SwiperSlide>
+              <SwiperSlide><img src={'/img4.jpg'} /></SwiperSlide>
           </Swiper>
             </div>
           </Container>
