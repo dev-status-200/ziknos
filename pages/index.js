@@ -17,6 +17,10 @@ export default function Home() {
   const [box1, setBox1] = useState(false)
   const [box2, setBox2] = useState(false)
 
+  const [boxHover1, setBoxHover1] = useState(false)
+  const [boxHover2, setBoxHover2] = useState(false)
+  const [boxHover3, setBoxHover3] = useState(false)
+
   const [nextServices, setNextServices] = useState(false);
 
   useEffect(() => {
@@ -65,17 +69,18 @@ export default function Home() {
     </Container>
     <div className='services'>
       <div className='cards-space' style={{overflowX:"hidden"}}> 
-    {!nextServices &&
-    <Row data-aos="slide-right" data-aos-duration="800" data-aos-once={true} data-aos-easing="ease-out-sine" >
+    <Row>
         <Col md={5}>
         <Row>
-          <Col md={6}><div className='card-top-line my-2'></div>
-            <div className='card-border'>
-              <div className='service-logo-bg' >
-                <BiMobileVibration className='service-logo' />
-              </div>
-              <div className='service-name-bg'>
-                  <div className='service-name my-4'>Application Development</div>
+        <Col md={6}>
+          <div className='card-top-line my-2'></div>
+            <div  data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+              <div className='card-border'>
+                <div className='service-logo-bg' >
+                  <BiMobileVibration className='service-logo' />
+                </div>
+                <div className='service-name-bg'>
+                    <div className='service-name my-4'>Application Development</div>
                 </div>
                 <div className='service-desc-bg'>
                   <div className='service-desc'>
@@ -85,16 +90,19 @@ export default function Home() {
                   </div>
                   <button className='card-btn'> Read More </button>
                 </div>
-                
+              </div>
+            <div className='card-top-line my-2'></div>
             </div>
           </Col>
-          <Col md={6}><div className='card-top-line my-2'></div>
-          <div className='card-border'>
-              <div className='service-logo-bg' >
-                <BiMobileVibration className='service-logo' />
-              </div>
-              <div className='service-name-bg'>
-                  <div className='service-name my-4'>Application Development</div>
+          <Col md={6}>
+          <div className='card-top-line my-2'></div>
+            <div  data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+              <div className='card-border'>
+                <div className='service-logo-bg' >
+                  <BiMobileVibration className='service-logo' />
+                </div>
+                <div className='service-name-bg'>
+                    <div className='service-name my-4'>Application Development</div>
                 </div>
                 <div className='service-desc-bg'>
                   <div className='service-desc'>
@@ -104,20 +112,23 @@ export default function Home() {
                   </div>
                   <button className='card-btn'> Read More </button>
                 </div>
-                
+              </div>
+            <div className='card-top-line my-2'></div>
             </div>
           </Col>
         </Row>
         </Col>
         <Col md={5}>
         <Row>
-          <Col md={6}><div className='card-top-line my-2'></div>
-          <div className='card-border'>
-              <div className='service-logo-bg' >
-                <BiMobileVibration className='service-logo' />
-              </div>
-              <div className='service-name-bg'>
-                  <div className='service-name my-4'>Application Development</div>
+        <Col md={6}>
+          <div className='card-top-line my-2'></div>
+            <div  data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+              <div className='card-border'>
+                <div className='service-logo-bg' >
+                  <BiMobileVibration className='service-logo' />
+                </div>
+                <div className='service-name-bg'>
+                    <div className='service-name my-4'>Application Development</div>
                 </div>
                 <div className='service-desc-bg'>
                   <div className='service-desc'>
@@ -127,16 +138,19 @@ export default function Home() {
                   </div>
                   <button className='card-btn'> Read More </button>
                 </div>
-                
+              </div>
+            <div className='card-top-line my-2'></div>
             </div>
           </Col>
-          <Col md={6}><div className='card-top-line my-2'></div>
-          <div className='card-border'>
-              <div className='service-logo-bg' >
-                <BiMobileVibration className='service-logo' />
-              </div>
-              <div className='service-name-bg'>
-                  <div className='service-name my-4'>Application Development</div>
+        <Col md={6}>
+          <div className='card-top-line my-2'></div>
+            <div  data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+              <div className='card-border'>
+                <div className='service-logo-bg' >
+                  <BiMobileVibration className='service-logo' />
+                </div>
+                <div className='service-name-bg'>
+                    <div className='service-name my-4'>Application Development</div>
                 </div>
                 <div className='service-desc-bg'>
                   <div className='service-desc'>
@@ -146,138 +160,47 @@ export default function Home() {
                   </div>
                   <button className='card-btn'> Read More </button>
                 </div>
-                
+              </div>
+            <div className='card-top-line my-2'></div>
             </div>
           </Col>
         </Row>
         </Col>
-        <Col md={2}>
+        <Col md={1}>
           <div className='next-btn' onClick={()=>setNextServices(true)}>
               <BiCaretRight className='next-btn-icon' />
           </div>
         </Col>
-      </Row>}
-      {nextServices && 
-      <Row data-aos="slide-left" data-aos-duration="800" data-aos-once={true} data-aos-easing="ease-out-sine" >
-        <Col md={1}>
-          <div className='next-btn-left' onClick={()=>setNextServices(false)}>
-              <BiCaretLeft className='next-btn-icon-left' />
-          </div>
-        </Col>
-        <Col md={5}>
-        <Row>
-          <Col md={6}><div className='card-top-line my-2'></div>
-            <div className='card-border'>
-              <div className='service-logo-bg' >
-                <BiMobileVibration className='service-logo' />
-              </div>
-              <div className='service-name-bg'>
-                  <div className='service-name my-4'>Application Development</div>
-                </div>
-                <div className='service-desc-bg'>
-                  <div className='service-desc'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer.
-                  </div>
-                  <button className='card-btn'> Read More </button>
-                </div>
-                
-            </div>
-          </Col>
-          <Col md={6}><div className='card-top-line my-2'></div>
-          <div className='card-border'>
-              <div className='service-logo-bg' >
-                <BiMobileVibration className='service-logo' />
-              </div>
-              <div className='service-name-bg'>
-                  <div className='service-name my-4'>Application Development</div>
-                </div>
-                <div className='service-desc-bg'>
-                  <div className='service-desc'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer.
-                  </div>
-                  <button className='card-btn'> Read More </button>
-                </div>
-                
-            </div>
-          </Col>
-        </Row>
-        </Col>
-        <Col md={5}>
-        <Row>
-          <Col md={6}><div className='card-top-line my-2'></div>
-          <div className='card-border'>
-              <div className='service-logo-bg' >
-                <BiMobileVibration className='service-logo' />
-              </div>
-              <div className='service-name-bg'>
-                  <div className='service-name my-4'>Application Development</div>
-                </div>
-                <div className='service-desc-bg'>
-                  <div className='service-desc'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer.
-                  </div>
-                  <button className='card-btn'> Read More </button>
-                </div>
-                
-            </div>
-          </Col>
-          <Col md={6}><div className='card-top-line my-2'></div>
-          <div className='card-border'>
-              <div className='service-logo-bg' >
-                <BiMobileVibration className='service-logo' />
-              </div>
-              <div className='service-name-bg'>
-                  <div className='service-name my-4'>Application Development</div>
-                </div>
-                <div className='service-desc-bg'>
-                  <div className='service-desc'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer.
-                  </div>
-                  <button className='card-btn'> Read More </button>
-                </div>
-                
-            </div>
-          </Col>
-        </Row>
-        </Col>
-        
-      </Row>}
+      </Row>
+
       </div>
     </div>
     <div className='servicesV2 pt-5' data-aos="fade-up" data-aos-once={true}  data-aos-duration="500" data-aos-easing="ease-out-sine">
         <div className='s2-text text-center white xxl'>Imagination Ideation<span className='orange six'> is possible!</span></div>
         <div className='white text-center lg three'>Lorem Ipsum iahsdb iahsrdnai oujre sfnesi isenfiosfm iueufnesi osdfns disfnsi isdjfni </div>
         <Row className='justify-content-md-center' style={{width:"100%"}}>
-          <Col md="auto mt-5"  style={{padding:"0px"}}>
-            <div className='white-box'>
+          <Col className='mx-1' md="auto mt-5"  style={{padding:"0px"}}>
+            <div className={boxHover1?'blue-box py-1':'white-box'} onMouseEnter={()=>setBoxHover1(true)} onMouseLeave={()=>setBoxHover1(false)}>
             <div className='white-box-top-text'>View More <span className='lg orange'><AiOutlineArrowRight/></span></div>
-              <div className='box-space bluish'>
+              <div className='box-space'>
                   <div style={{height:"40px"}}>WEBSITE</div>
                   <div>DEVELOPMENT</div>
               </div>
             </div>
           </Col>
-          <Col md="auto mt-5" style={{padding:"0px"}}>
-          <div className='blue-box'>
-              <div className='white-box-top-text white'>View More <span className='lg orange'><AiOutlineArrowRight/></span></div>
-              <div className='box-space white'>
+          <Col className='mx-1' md="auto mt-5" style={{padding:"0px"}}>
+          <div className={boxHover2?'blue-box py-1':'white-box'} onMouseEnter={()=>setBoxHover2(true)} onMouseLeave={()=>setBoxHover2(false)}> {/* blue-box */}
+              <div className='white-box-top-text'>View More <span className='lg orange'><AiOutlineArrowRight/></span></div>
+              <div className='box-space'>
                   <div style={{height:"40px"}}>WEBSITE</div>
                   <div>DEVELOPMENT</div>
               </div>
             </div>
           </Col>
-          <Col md="auto mt-5" style={{padding:"0px"}}> 
-          <div className='white-box'>
+          <Col className='mx-1' md="auto mt-5" style={{padding:"0px"}}> 
+          <div className={boxHover3?'blue-box py-1':'white-box'} onMouseEnter={()=>setBoxHover3(true)} onMouseLeave={()=>setBoxHover3(false)}>
           <div className='white-box-top-text'>View More <span className='lg orange'><AiOutlineArrowRight/></span></div>
-              <div className='box-space bluish'>
+              <div className='box-space'>
                   <div style={{height:"40px"}}>WEBSITE</div>
                   <div>DEVELOPMENT</div>
               </div>
@@ -302,4 +225,3 @@ export default function Home() {
   </div>
 )
 }
-{/*  */}

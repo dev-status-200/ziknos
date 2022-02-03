@@ -295,14 +295,19 @@ body {
     width: 500px;
 }
 .white-box{
-background-color: white;
-border: 1px solid rgba(106, 120, 165, 0.459);
-margin-bottom: 40px;
+    background-color: white;
+    border: 1px solid rgba(106, 120, 165, 0.459);
+    margin-bottom: 40px;
+    color: #08294e;
 }
 .blue-box{
+    cursor: pointer;
+    transition-duration: 300ms;
+    animation: ease-in-out;
     background-image: url('/grad-bg.jpg');
     border: 1px solid rgba(106, 120, 165, 0.459);
     margin-bottom: 40px;
+    color: white;
 }
 .white-box-top-text{
     margin-top: 20px;
@@ -310,6 +315,7 @@ margin-bottom: 40px;
     margin-right: 200px;
     margin-left: 20px;
 }
+
 .box-space{
     font-family: 'Roboto', sans-serif;
     margin-top: 100px;
