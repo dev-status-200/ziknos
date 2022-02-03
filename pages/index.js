@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import Router from 'next/router'
 
 export default function Home() {
 
@@ -167,7 +168,7 @@ export default function Home() {
         </Row>
         </Col>
         <Col md={1}>
-          <div className='next-btn' onClick={()=>setNextServices(true)}>
+          <div className='next-btn' onClick={()=>Router.push('/globalItServices')}>
               <BiCaretRight className='next-btn-icon' />
           </div>
         </Col>
