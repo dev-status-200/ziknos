@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Row, Col, Container, Button } from 'react-bootstrap'
 import {AiFillCalendar} from "react-icons/ai";
+import aos from 'aos'
 
 const globalItServices = () => {
+
+    useEffect(() => {
+        aos.init();
+    }, []);
+    
+
   return (
-  <div>
+  <div >
     <div className='blue-gradient-bg'>
+        <Container>
         <Row style={{width:"100%"}}>
             <Col md={6} className='py-5'>
             <div className='hero-text text-end'> 
@@ -21,9 +29,10 @@ const globalItServices = () => {
             <Col md={6}>
             </Col>
         </Row>
+        </Container>
     </div>
     <div className='grey-bg py-3'>
-        <Container>
+        <Container data-aos="fade-in" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
             <h1 className='four'><span className='bluish'>Global IT</span> <span className='orange'>Services</span></h1>
             <p className='md'>Brainotech team consists of professional and experienced consultants, engineers, technicians, and designers
             that would work with you to achieve the best possible solution to your IT related problem. Our professional
@@ -31,8 +40,8 @@ const globalItServices = () => {
         </Container>
     </div>
     <div>
-    <Container>
-    <Row>
+    <Container style={{overflowX:"hidden", overflowY:"hidden"}}>
+    <Row data-aos="slide-right" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
         <Col className='my-5' md={4}>
         <Row>
             <Col xs={1} md={1}>
@@ -61,7 +70,7 @@ const globalItServices = () => {
             </Row>
         </Col>
     </Row>
-    <Row>
+    <Row data-aos="slide-left" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
         <Col md={8} className='my-5'>
             <h2 className='text-end mx-5'>IT ASSET RECOVERY</h2>
             <p className='my-3 four m-grey sm-2 text-end mx-5'>
@@ -90,7 +99,7 @@ const globalItServices = () => {
         </Row>
         </Col>
     </Row>
-    <Row>
+    <Row data-aos="slide-right" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
         <Col className='my-5' md={4}>
         <Row>
             <Col xs={1} md={1}>
@@ -119,7 +128,7 @@ const globalItServices = () => {
             </Row>
         </Col>
     </Row>
-    <Row>
+    <Row data-aos="slide-left" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
         <Col md={8} className='my-5'>
             <h2 className='text-end mx-5'>IT ASSET RECOVERY</h2>
             <p className='my-3 four m-grey sm-2 text-end mx-5'>

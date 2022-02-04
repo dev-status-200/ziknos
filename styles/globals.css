@@ -382,12 +382,39 @@ body {
     -webkit-box-shadow: 1px 2px 45px 19px rgba(0,0,0,0.12);
     -moz-box-shadow: 1px 2px 45px 19px rgba(0,0,0,0.12);
     display: block;
-    width: 70%;
+    width: 80%;
     object-fit: cover;
 }
 .empty-space{
     position: relative;
     top: 540px;
+}
+.last-box1{
+    position: relative;
+    top:500px
+}
+.boxOne:hover{
+    background-color: #05203f;
+    color: white;
+}
+.boxOne{
+    transition-duration: 300ms;
+    border-top: 1px solid silver;
+    background-color: white;
+    color: #08294e;
+    cursor: pointer;
+}
+.footer{
+    position: relative;
+    top:500px;
+    background-color: #062241;
+    background-image: linear-gradient(to right, #010e1b,#041b30 , #04192c , #091d31 , #010e1b);
+    max-height: 750px;
+}
+.footerBlack{
+    position: relative;
+    top:500px;
+    background-color: black;
 }
 
 /* ==========================  GlobalIt Services */

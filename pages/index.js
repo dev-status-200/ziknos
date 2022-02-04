@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import React, {useState, useEffect} from 'react'
-import Image from 'next/image'
 import { Row, Col, Container,Button } from 'react-bootstrap'
 
 import aos from 'aos'
 import {BiMobileVibration, BiCaretRight, BiCaretLeft} from 'react-icons/bi'
+import {ImInstagram} from 'react-icons/im'
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { FaFacebookSquare, FaTwitterSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -145,7 +146,7 @@ export default function Home() {
           </Col>
         <Col md={6}>
           <div className='card-top-line my-2'></div>
-            <div  data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+            <div data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
               <div className='card-border'>
                 <div className='service-logo-bg' >
                   <BiMobileVibration className='service-logo' />
@@ -223,6 +224,37 @@ export default function Home() {
     <div className='empty-space'>
           <div className='my-4 white'> .</div>
     </div>
+    <div className='last-box1'>
+      <div className='boxOne p-3'>
+        <div className='text-center  xxl six'> What We Do? </div>
+        <div className='text-center  lg'> A Satisfied Customer is the biggest achievement </div>
+        <div className='text-center orange xxl'><AiOutlineArrowRight/></div>
+      </div>
+      <div className='boxOne p-3'>
+        <div className='text-center  xxl six'> What We Do? </div>
+        <div className='text-center  lg'> A Satisfied Customer is the biggest achievement </div>
+        <div className='text-center orange xxl'><AiOutlineArrowRight/></div>
+      </div>
+    </div>
+    <div className='footer px-5 pt-4 pb-5'>
+    <Row>
+      <Col>
+        <div className='white five sm-2' style={{cursor:"pointer", width:"90px"}}>About Us</div>
+        <div className='white five sm-2' style={{cursor:"pointer", width:"50px"}}>Services</div>
+      </Col>
+      <Col>
+      <div className='white five sm-2' style={{cursor:"pointer", width:"100px", float:"right"}}>
+      <div >Follow Us</div>
+      <span ><FaFacebookSquare/> </span>
+      <span ><FaTwitterSquare/> </span>
+      <span ><FaLinkedin/> </span>
+      <span ><ImInstagram/> </span>
+      </div>
+      </Col>
+    </Row>
+    <Row className='my-1'></Row>
+    </div>
+    <div className='footerBlack p-2'><div className='white text-center'>2022 Ziknos, All Rights Reserved</div></div>
   </div>
 )
 }
