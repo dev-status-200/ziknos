@@ -1,17 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Row, Col, Container, Button } from 'react-bootstrap'
 import {AiFillCalendar} from "react-icons/ai";
+import {ImInstagram} from 'react-icons/im'
+import { FaFacebookSquare, FaTwitterSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
+import { AiOutlineArrowRight } from "react-icons/ai";
 import aos from 'aos'
 
 const globalItServices = () => {
 
+    const [boxHover1, setBoxHover1] = useState(false);
+
     useEffect(() => {
         aos.init();
-    }, []);
-    
+    }, []);    
 
   return (
-  <div >
+  <div style={{overflowX:"hidden"}}>
     <div className='blue-gradient-bg'>
         <Container>
         <Row style={{width:"100%"}}>
@@ -159,6 +163,53 @@ const globalItServices = () => {
     </Row>
     </Container>
     </div>
+    <div className=''  data-aos="fade-up" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+        <Row className="justify-content-md-center my-5">
+            <Col md="auto">
+                <div className='box-normal px-3 py-2'>
+                    <div className='md'>View More <span><AiOutlineArrowRight className='orange' /></span></div>
+                    <div className='empty-normal-1'></div>
+                    <div className='lg six box_normal-text'style={{height:"34px"}}>DESKTOP</div>
+                    <div className='lg six box_normal-text'>SUPPORT</div>
+                </div>
+            </Col>
+            <Col md="auto">
+                <div className='box-normal px-3 py-2'>
+                    <div className='md'>View More <span><AiOutlineArrowRight className='orange' /></span></div>
+                    <div className='empty-normal-1'></div>
+                    <div className='lg six box_normal-text'style={{height:"34px"}}>CLOUD</div>
+                    <div className='lg six box_normal-text'>COMPUTING</div>
+                </div>
+            </Col>
+            <Col md="auto">
+                <div className='box-normal px-3 py-2'>
+                    <div className='md'>View More <span><AiOutlineArrowRight className='orange' /></span></div>
+                    <div className='empty-normal-1'></div>
+                    <div className='lg six box_normal-text'style={{height:"34px"}}>DATA</div>
+                    <div className='lg six box_normal-text'>DESTRUCTION</div>
+                </div>
+            </Col>
+        </Row>
+    </div>
+    <div className='footer-normal px-5 pt-4 pb-5'>
+    <Row>
+      <Col>
+        <div className='white five sm-2' style={{cursor:"pointer", width:"90px"}}>About Us</div>
+        <div className='white five sm-2' style={{cursor:"pointer", width:"50px"}}>Services</div>
+      </Col>
+      <Col>
+      <div className='white five sm-2' style={{cursor:"pointer", width:"100px", float:"right"}}>
+      <div >Follow Us</div>
+      <span ><FaFacebookSquare/> </span>
+      <span ><FaTwitterSquare/> </span>
+      <span ><FaLinkedin/> </span>
+      <span ><ImInstagram/> </span>
+      </div>
+      </Col>
+    </Row>
+    <Row className='my-1'></Row>
+    </div>
+    <div className='footerBlack-normal p-2'><div className='white text-center'>2022 Ziknos, All Rights Reserved</div></div>
   </div>
   );
 };

@@ -4,8 +4,8 @@ import { Row, Col, Container,Button } from 'react-bootstrap'
 
 import aos from 'aos'
 import {BiMobileVibration, BiCaretRight, BiCaretLeft} from 'react-icons/bi'
-import {ImInstagram} from 'react-icons/im'
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { ImInstagram } from 'react-icons/im'
 import { FaFacebookSquare, FaTwitterSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,8 +22,6 @@ export default function Home() {
   const [boxHover1, setBoxHover1] = useState(false)
   const [boxHover2, setBoxHover2] = useState(false)
   const [boxHover3, setBoxHover3] = useState(false)
-
-  const [nextServices, setNextServices] = useState(false);
 
   useEffect(() => {
     aos.init()

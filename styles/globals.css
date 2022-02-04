@@ -456,3 +456,52 @@ body {
     height: 3px;
     background-color: black;
 }
+
+.box-normal{
+    transition-duration: 500ms;
+    background-color: white;
+    border: 1px solid rgba(106, 120, 165, 0.459);
+    color: #08294e;
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    transition: background-position 1s; 
+}
+.box-normal:hover{
+    cursor: pointer;
+    background-position: 5% 20%;
+    transition-duration: 400ms;
+    animation: ease-in-out;
+    background-image: url('/grad-bg.jpg');
+    border: 1px solid rgba(106, 120, 165, 0.459);
+    color: white;
+}
+
+#__next > div > div:nth-child(4) > div > div:nth-child(1){
+    padding: 3px;
+}
+#__next > div > div:nth-child(4) > div > div:nth-child(2){
+    padding: 3px;
+}
+
+#__next > div > div:nth-child(4) > div > div:nth-child(3){
+    padding: 3px;
+}
+
+
+
+.box_normal-text{
+    font-family: 'Roboto', sans-serif;
+    width: 280px;
+}
+.empty-normal-1{
+    margin-top: 80px;
+}
+
+.footer-normal{
+    background-color: #062241;
+    background-image: linear-gradient(to right, #010e1b,#041b30 , #04192c , #091d31 , #010e1b);
+    max-height: 750px;
+}
+.footerBlack-normal{
+    background-color: black;
+}
