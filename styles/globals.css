@@ -451,9 +451,23 @@ body {
     height: 350px;
     margin-left: -12px;
 }
+.orange-verticle-line-right{
+    background-color: #e46128;
+    height: 270px;
+    margin-left: 20px;
+}
+.blue-verticle-line-right{
+    background-color: #08294e;
+    height: 270px;
+    width: 6px;
+}
 .asset{
     margin-top: 15%;
     margin-bottom: 50%;
+}
+.asset-right{
+    margin-top: 90px;
+    margin-bottom: 100px;
 }
 
 .asset-desc{
@@ -548,8 +562,11 @@ body {
     color: #023064;
     font-size: 20px;
     padding: 10px;
-    -webkit-box-shadow: -2px 32px 8px -26px rgba(0,0,0,0.73); 
-    box-shadow: -2px 32px 8px -26px rgba(0,0,0,0.73);
+}
+.left-menu-item-white:hover{
+    transition-duration: 400ms;
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
 }
 .left-menu-icon{
     color: silver;

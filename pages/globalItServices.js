@@ -5,6 +5,7 @@ import {ImInstagram} from 'react-icons/im'
 import { FaFacebookSquare, FaTwitterSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import aos from 'aos'
+import Router from 'next/router'
 
 const globalItServices = () => {
 
@@ -66,7 +67,7 @@ const globalItServices = () => {
             </p>
             <Row>
                 <Col md={3}>
-                <button className='blue-btn'> Read More</button>
+                <button className='blue-btn' onClick={()=>Router.push('/rollout')}> Read More</button>
                 </Col>
                 <Col md={9}>
                     <div className='line my-4'></div>
@@ -88,7 +89,7 @@ const globalItServices = () => {
                     <div className='line-2 my-4'></div>
                 </Col>
                 <Col md={3}>
-                <button className='blue-btn'> Read More</button>
+                <button className='blue-btn' onClick={()=>Router.push('/rollout')}> Read More</button>
                 </Col>
             </Row>
         </Col>
@@ -124,7 +125,7 @@ const globalItServices = () => {
             </p>
             <Row>
                 <Col md={3}>
-                <button className='blue-btn'> Read More</button>
+                <button className='blue-btn' onClick={()=>Router.push('/rollout')}> Read More</button>
                 </Col>
                 <Col md={9}>
                     <div className='line my-4'></div>
@@ -146,7 +147,7 @@ const globalItServices = () => {
                     <div className='line-2 my-4'></div>
                 </Col>
                 <Col md={3}>
-                <button className='blue-btn'> Read More</button>
+                <button className='blue-btn' onClick={()=>Router.push('/rollout')}> Read More</button>
                 </Col>
             </Row>
         </Col>

@@ -130,11 +130,11 @@ const rollout = () => {
                         </Col>
                         <Col className='my-5' md={4}>
                             <Row>
-                                <Col xs={10} md={10} className='orange-verticle-line'>
-                                    <div className='text-center'> <AiFillCalendar className='white xxxl asset' /> </div>
+                                <Col xs={10} md={10} className='orange-verticle-line-right'>
+                                    <div className='text-center'> <AiFillCalendar className='white xxxl asset-right' /> </div>
                                 </Col>
                                 <Col xs={1} md={1}>
-                                    <div className='blue-verticle-line bluish'></div>
+                                    <div className='blue-verticle-line-right bluish'></div>
                                 </Col>
                             </Row>
                         </Col>
