@@ -65,6 +65,9 @@ body {
 .orange{
     color: #e46128;
 }
+.orange-bg{
+    background-color: #e46128;
+}
 .l-grey{
     color: #e2e2e2;
 }
@@ -425,7 +428,6 @@ body {
 
 /* ==========================  GlobalIt Services */
 .grey-bg{
-    margin-top: 10px;
     background-color: #d6d6d6;
     max-height: 750px;
 }
@@ -439,8 +441,23 @@ body {
     height: 200px;
     margin-left: -12px;
 }
+.blue-verticle-line-desc{
+    background-color: #08294e;
+    height: 350px;
+    width: 6px;
+}
+.orange-verticle-line-desc{
+    background-color: #e46128;
+    height: 350px;
+    margin-left: -12px;
+}
 .asset{
     margin-top: 15%;
+    margin-bottom: 50%;
+}
+
+.asset-desc{
+    margin-top: 35%;
     margin-bottom: 50%;
 }
 
@@ -510,4 +527,40 @@ body {
 }
 .footerBlack-normal{
     background-color: black;
+}
+
+/* =========================== RollOut Page ======================== */
+
+.left-menu{
+    box-shadow: 15px 14px 40px -18px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 15px 14px 40px -18px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 14px 40px -18px rgba(0,0,0,0.75);
+}
+.left-menu-item-blue{
+    background-color: #023064;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.left-menu-item-white{
+    border-top: 1px solid #b9b9b9;
+    background-color: white;
+    color: #023064;
+    font-size: 20px;
+    padding: 10px;
+    -webkit-box-shadow: -2px 32px 8px -26px rgba(0,0,0,0.73); 
+    box-shadow: -2px 32px 8px -26px rgba(0,0,0,0.73);
+}
+.left-menu-icon{
+    color: silver;
+    padding: 2px;
+    margin-bottom: 3px;
+}
+.touch-btn{
+    color: black;
+    background-color: white;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
 }
