@@ -204,6 +204,10 @@ body {
     background-color: #023064;
     height: 5px;
 }
+.card-bottom-line{
+    background-color: #cc5c2c;
+    height: 5px;
+}
 .card-border{
     border: 1px solid #023064;
     height: 450px;
@@ -329,7 +333,9 @@ body {
     border: 1px solid rgba(106, 120, 165, 0.459);
     margin-bottom: 40px;
     color: white;
-    
+    box-shadow: 0px 1px 38px 9px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 0px 1px 38px 9px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 1px 38px 9px rgba(0,0,0,0.59);
 }
 .white-box-top-text{
     margin-top: 20px;

@@ -91,7 +91,7 @@ export default function Home() {
                   <button className='card-btn'> Read More </button>
                 </div>
               </div>
-            <div className='card-top-line my-2'></div>
+            <div className='card-bottom-line my-2'></div>
             </div>
           </Col>
           <Col md={6}>
@@ -113,7 +113,7 @@ export default function Home() {
                   <button className='card-btn'> Read More </button>
                 </div>
               </div>
-            <div className='card-top-line my-2'></div>
+            <div className='card-bottom-line my-2'></div>
             </div>
           </Col>
         </Row>
@@ -139,7 +139,7 @@ export default function Home() {
                   <button className='card-btn'> Read More </button>
                 </div>
               </div>
-            <div className='card-top-line my-2'></div>
+            <div className='card-bottom-line my-2'></div>
             </div>
           </Col>
         <Col md={6}>
@@ -161,13 +161,13 @@ export default function Home() {
                   <button className='card-btn'> Read More </button>
                 </div>
               </div>
-            <div className='card-top-line my-2'></div>
+            <div className='card-bottom-line my-2'></div>
             </div>
           </Col>
         </Row>
         </Col>
         <Col md={1}>
-          <div className='next-btn' onClick={()=>Router.push('/globalItServices')}>
+          <div className='next-btn' onClick={()=>Router.push('/globalItServices')} data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
               <BiCaretRight className='next-btn-icon' />
           </div>
         </Col>
@@ -179,7 +179,7 @@ export default function Home() {
         <div className='s2-text text-center white xxl'>Imagination Ideation<span className='orange six'> is possible!</span></div>
         <div className='white text-center lg three'>Lorem Ipsum iahsdb iahsrdnai oujre sfnesi isenfiosfm iueufnesi osdfns disfnsi isdjfni </div>
         <Row className='justify-content-md-center' style={{width:"100%"}}>
-          <Col className='mx-1' md="auto mt-5"  style={{padding:"0px"}}>
+          <Col className='mx-3' md="auto"  style={{padding:"0px", marginTop:"70px"}}>
             <div className={boxHover1?'blue-box py-1':'white-box'} onMouseEnter={()=>setBoxHover1(true)} onMouseLeave={()=>setBoxHover1(false)}>
             <div className='white-box-top-text'>View More <span className='lg orange'><AiOutlineArrowRight/></span></div>
               <div className='box-space'>
@@ -188,7 +188,7 @@ export default function Home() {
               </div>
             </div>
           </Col>
-          <Col className='mx-1' md="auto mt-5" style={{padding:"0px"}}>
+          <Col className='mx-3' md="auto"  style={{padding:"0px", marginTop:"70px"}}>
           <div className={boxHover2?'blue-box py-1':'white-box'} onMouseEnter={()=>setBoxHover2(true)} onMouseLeave={()=>setBoxHover2(false)}> {/* blue-box */}
               <div className='white-box-top-text'>View More <span className='lg orange'><AiOutlineArrowRight/></span></div>
               <div className='box-space'>
@@ -197,7 +197,7 @@ export default function Home() {
               </div>
             </div>
           </Col>
-          <Col className='mx-1' md="auto mt-5" style={{padding:"0px"}}> 
+          <Col className='mx-3' md="auto"  style={{padding:"0px", marginTop:"70px"}}> 
           <div className={boxHover3?'blue-box py-1':'white-box'} onMouseEnter={()=>setBoxHover3(true)} onMouseLeave={()=>setBoxHover3(false)}>
           <div className='white-box-top-text'>View More <span className='lg orange'><AiOutlineArrowRight/></span></div>
               <div className='box-space'>
