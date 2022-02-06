@@ -176,7 +176,7 @@ export default function Home() {
         </Row>
         </Col>
         <Col md={1}>
-          <div className='next-btn' onClick={()=>Router.push('/globalItServices')} data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+          <div className='next-btn' data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
               <BiCaretRight className='next-btn-icon' />
           </div>
         </Col>
@@ -233,12 +233,12 @@ export default function Home() {
     </div>
     <div className='last-box1'>
       <div className='boxOne p-3'>
-        <div className='text-center  xxl six'> What We Do? </div>
-        <div className='text-center  lg'> A Satisfied Customer is the biggest achievement </div>
+        <div className='text-center  xxl six'  onClick={()=>Router.push('/globalItServices')}> What We Do? </div>
+        <div className='text-center  lg'> We Provide Global IT Services </div>
         <div className='text-center orange xxl'><AiOutlineArrowRight/></div>
       </div>
       <div className='boxOne p-3'>
-        <div className='text-center  xxl six'> What We Do? </div>
+        <div className='text-center  xxl six'> What We Value? </div>
         <div className='text-center  lg'> A Satisfied Customer is the biggest achievement </div>
         <div className='text-center orange xxl'><AiOutlineArrowRight/></div>
       </div>

@@ -6,6 +6,8 @@ import {BiMobileVibration, BiCaretRight, BiCaretLeft} from 'react-icons/bi'
 import { AiOutlineArrowRight } from "react-icons/ai";
 import {ImInstagram} from 'react-icons/im'
 
+import Router from 'next/router'
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -95,32 +97,34 @@ const MobileView = () => {
             </Col>
         </Row>
     </div>
-    <div className='mob-bg-hero my-5 py-3' >
+    <div className='mob-bg-hero mt-5 py-3' >
         <div className='s2-text text-center white lg py-3'>Imagination Ideation<span className='orange six'> <br/>is possible!</span></div>
         <div className='mob-2nd-card my-3 text-center bg-white mx-3 p-1'
              data-aos="slide-up" data-aos-duration="400" data-aos-easing="ease-out-sine"
         >
             <div className='mob-card-border'>
-            <div className='bluish md seven my-2'> WEBSITE<br/> DEVELOPMENT<br/><BiCaretRight className="orange lg" /> </div>
+            <div className='bluish md seven my-2 mx-3 mt-3'> WEBSITE<br/> DEVELOPMENT<br/> </div>
+            <div className='bluish sm mx-3 my-3'> View More <AiOutlineArrowRight className="orange sm" /></div>
             </div>
         </div>
         <div className='mob-2nd-card my-3 text-center bg-white mx-3 p-1'
              data-aos="slide-up" data-aos-duration="400" data-aos-easing="ease-out-sine"
         >
             <div className='mob-card-border'>
-            <div className='bluish md seven my-2'> APPLICATION DEVELOPMENT<br/><BiCaretRight className="orange lg" /> </div>
+            <div className='bluish md seven my-2 mx-3 mt-3'> APPLICATION<br/> DEVELOPMENT<br/> </div>
+            <div className='bluish sm mx-3 my-3'> View More <AiOutlineArrowRight className="orange sm" /></div>
             </div>
         </div>
         <div className='mob-2nd-card my-3 text-center bg-white mx-3 p-1'
              data-aos="slide-up" data-aos-duration="400" data-aos-easing="ease-out-sine"
         >
             <div className='mob-card-border'>
-            <div className='bluish md seven my-2'> GRAPHICS<br/>DESIGNING<br/><BiCaretRight className="orange lg" /> </div>
+            <div className='bluish md seven my-2 mx-3 mt-3'> GRAPHIC<br/> DESIGNING<br/> </div>
+            <div className='bluish sm mx-3 my-3'> View More <AiOutlineArrowRight className="orange sm" /></div>
             </div>
         </div>
     </div>
-    <div className=''>
-    <Container>
+    <Container style={{marginTop:"0px", paddingTop:"0px"}}>
             <div className=''>
             <Swiper autoplay={true} pagination={true} modules={[Pagination]} className="mySwiper">
               <SwiperSlide><img src={'/img4.jpg'} /></SwiperSlide>
@@ -129,16 +133,15 @@ const MobileView = () => {
           </Swiper>
             </div>
           </Container>
-    </div>
     <div className='mob-last-service my-2'>
         <div className='mob-last-section text-center p-2'>
-            <div className='bluish lg six'> What We Do? </div>
-            <div className='sm bluish four'> We Provide Global IT Services </div>
+            <div className='lg six' onClick={()=>Router.push('/globalItServices')}> What We Do? </div>
+            <div className='sm four'> We Provide Global IT Services </div>
             <div><AiOutlineArrowRight className='orange md my-2' /></div>
         </div>
         <div className='mob-last-section text-center p-2'>
-            <div className='bluish lg six'> What We Value? </div>
-            <div className='sm bluish four'> A Satisfied Customer is the biggest achievement </div>
+            <div className='lg six'> What We Value? </div>
+            <div className='sm four'> A Satisfied Customer is the biggest achievement </div>
             <div><AiOutlineArrowRight className='orange md my-2' /></div>
         </div>
     </div>

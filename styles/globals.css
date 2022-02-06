@@ -613,9 +613,18 @@ body {
     border-radius: 90px;
 }
 .mob-card-border{
-    border: 1px solid #023064;
+    border: 2px inset silver;
+    box-shadow: 0px 1px 37px -6px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 0px 1px 37px -6px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 0px 1px 37px -6px rgba(0,0,0,0.75) inset;
 }
 .mob-last-section{
     border-bottom: 1px solid silver;
     border-top: 1px solid silver;
+    color: #023064;
+}
+.mob-last-section:hover{
+    transition-duration: 300ms;
+    background-color: #023064;
+    color:white;
 }
