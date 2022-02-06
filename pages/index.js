@@ -14,6 +14,9 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import Router from 'next/router'
 
+import MobileView from '../components/MobileView'
+
+
 export default function Home() {
 
   const [box1, setBox1] = useState(false)
@@ -23,9 +26,12 @@ export default function Home() {
   const [boxHover2, setBoxHover2] = useState(false)
   const [boxHover3, setBoxHover3] = useState(false)
 
+  const [mobileView, setMobileView] = useState(false)
+
   useEffect(() => {
-    aos.init()
-  }, [])
+    aos.init();
+
+  })
 
   return (
   <div  data-aos="fade-in" data-aos-duration="700" data-aos-easing="ease-out-sine">
@@ -34,8 +40,11 @@ export default function Home() {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
   </Head>
-
-    <Container fluid>
+    <div className='mobileView'>
+      <MobileView/>
+    </div>
+    <div className='PC-View'>
+      <Container fluid>
       <Row className='justify-content-md-center blue-gradient-bg' style={{overflowY:"hidden",overflowX:"hidden"}}>
         <Col md={6} data-aos="slide-left" data-aos-duration="800" data-aos-once={true} data-aos-easing="ease-out-sine">
           <div className='my-5 py-5' style={{ alignContent:"end",textAlign:"end"}}>
@@ -253,6 +262,8 @@ export default function Home() {
     <Row className='my-1'></Row>
     </div>
     <div className='footerBlack p-2'><div className='white text-center'>2022 Ziknos, All Rights Reserved</div></div>
+    </div>
+    
   </div>
 )
 }
