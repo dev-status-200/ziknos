@@ -32,7 +32,7 @@ const MobileView = () => {
             </Col>
         </Row>
     </div>
-    <div style={{height:"100%", width:"100%", overflowX:"hidden"}}>
+    <div style={{height:"100%", width:"100%", overflowX:"hidden", overflowY:"hidden"}}>
         <Row className="justify-content-md-center my-5 mx-3">
             <Col sm={12}>
                 <div className='my-2 blue-bg' style={{minHeight:"3px"}}></div>
