@@ -233,7 +233,7 @@ export default function Home() {
     </div>
     <div className='last-box1'>
       <div className='boxOne p-3'>
-        <div className='text-center  xxl six'  onClick={()=>Router.push('/globalItServices')}> What We Do? </div>
+        <div className='text-center  xxl six' ><a className='link' href='/globalItServices' style={{textDecoration:"none"}}> What We Do?</a> </div>
         <div className='text-center  lg'> We Provide Global IT Services </div>
         <div className='text-center orange xxl'><AiOutlineArrowRight/></div>
       </div>

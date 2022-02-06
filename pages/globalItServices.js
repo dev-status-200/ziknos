@@ -5,7 +5,8 @@ import {ImInstagram} from 'react-icons/im'
 import { FaFacebookSquare, FaTwitterSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import aos from 'aos'
-import Router from 'next/router'
+import MBGlobalService from '../components/MBGlobalService';
+
 
 const globalItServices = () => {
 
@@ -17,7 +18,11 @@ const globalItServices = () => {
 
   return (
   <div style={{overflowX:"hidden"}}>
-    <div className='blue-gradient-bg'>
+  <div className='mobileView'>
+    <MBGlobalService/>
+  </div>
+    <div className='PC-View'>
+    <div className=' blue-gradient-bg' >
         <Container>
         <Row style={{width:"100%"}}>
             <Col md={6} className='py-5'>
@@ -67,7 +72,7 @@ const globalItServices = () => {
             </p>
             <Row>
                 <Col md={3}>
-                <button className='blue-btn' onClick={()=>Router.push('/rollout')}> Read More</button>
+                <button className='blue-btn'><a href="/service" style={{textDecoration:"none", color:"white"}}>Read More</a></button>
                 </Col>
                 <Col md={9}>
                     <div className='line my-4'></div>
@@ -89,7 +94,7 @@ const globalItServices = () => {
                     <div className='line-2 my-4'></div>
                 </Col>
                 <Col md={3}>
-                <button className='blue-btn' onClick={()=>Router.push('/rollout')}> Read More</button>
+                <button className='blue-btn'><a href="/service" style={{textDecoration:"none", color:"white"}}>Read More</a></button>
                 </Col>
             </Row>
         </Col>
@@ -125,7 +130,7 @@ const globalItServices = () => {
             </p>
             <Row>
                 <Col md={3}>
-                <button className='blue-btn' onClick={()=>Router.push('/rollout')}> Read More</button>
+                <button className='blue-btn'><a href="/service" style={{textDecoration:"none", color:"white"}}>Read More</a></button>
                 </Col>
                 <Col md={9}>
                     <div className='line my-4'></div>
@@ -147,7 +152,7 @@ const globalItServices = () => {
                     <div className='line-2 my-4'></div>
                 </Col>
                 <Col md={3}>
-                <button className='blue-btn' onClick={()=>Router.push('/rollout')}> Read More</button>
+                <button className='blue-btn'><a href="/service" style={{textDecoration:"none", color:"white"}}>Read More</a></button>
                 </Col>
             </Row>
         </Col>
@@ -211,6 +216,7 @@ const globalItServices = () => {
     <Row className='my-1'></Row>
     </div>
     <div className='footerBlack-normal p-2'><div className='white text-center'>2022 Ziknos, All Rights Reserved</div></div>
+    </div>
   </div>
   );
 };

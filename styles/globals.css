@@ -413,6 +413,13 @@ body {
     color: #08294e;
     cursor: pointer;
 }
+.link{
+    color: #08294e;
+}
+.boxOne:hover .link{
+    color: white;
+}
+
 .footer{
     position: relative;
     top:500px;

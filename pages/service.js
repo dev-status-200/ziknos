@@ -6,7 +6,7 @@ import { FaFacebookSquare, FaTwitterSquare, FaLinkedin, FaUserAlt } from "react-
 import { AiOutlineArrowRight } from "react-icons/ai";
 import aos from 'aos'
 
-const rollout = () => {
+const service = () => {
 
     const [boxHover1, setBoxHover1] = useState(false);
 
@@ -15,8 +15,23 @@ const rollout = () => {
     }, []);
 
     return (
-        <div style={{ overflowX: "hidden" }}>
-            <div className='blue-gradient-bg'>
+        <div style={{ overflowX: "hidden", width:"100%" }}>
+        <div className='mobileView'>
+        <div className='mob-bg-hero' style={{height:"100%", width:"100%", overflowX:"hidden"}}> 
+        <Row className="justify-content-md-center" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-out-sine">
+            <Col className='my-5' md="auto">
+            <h1 className='white four xl text-center'>
+              Imagination, Ideation<br/> & Innovation,<br/> <span className='orange'>everything is<br/> possible!</span>
+            </h1>
+            <p className='white sm-2 mt-5 mx-5 text-center'>
+              Driven by endless imaginative thoughts, ideas and innovation, we are developing distinctive internet solutions that guarantee greater
+              effectiveness and competitive advantage for your company and therefore, for your end-users
+            </p>
+            </Col>
+        </Row>
+    </div>
+        </div>
+            <div className='blue-gradient-bg PC-View'>
                 <Container>
                     <Row style={{ width: "100%" }}>
                         <Col md={6} className='py-5'>
@@ -38,7 +53,7 @@ const rollout = () => {
             <div>
                 <Container>
                     <Row>
-                        <Col md={4}>
+                        <Col md={4}  data-aos="fade-up" data-aos-duration="700" data-aos-once={true} data-aos-easing="ease-out-sine">
                             <div className='left-menu mt-3'>
                                 <div className='left-menu-item-blue'> Globat IT Services </div>
                                 <div className='left-menu-item-white'> <FaUserAlt className='left-menu-icon' /> IT Asset Recovery </div>
@@ -49,7 +64,7 @@ const rollout = () => {
                             </div>
                         </Col>
                         <Col md={8}>
-                            <div className='grey-bg px-5 py-3 mt-3'>
+                            <div className='PC-View grey-bg px-5 py-3 mt-3'>
                                 <h1 className='four'><span className='bluish'>IT Rollout & Migration</span></h1>
                                 <p className='sm-2 mt-4'>
                                     From changing the operating system platform or the middleware
@@ -59,13 +74,44 @@ const rollout = () => {
                                     complex migration and IT rollout projects - some with strong interdependencies. IT
                                     rollout projects - some with strong interdependencies.
                                 </p>
-
+                            </div>
+                            <div className='mobileView grey-bg px-5 py-3 mt-3 text-center'>
+                                <h1 className='six md'><span className='bluish'>IT Rollout & Migration</span></h1>
+                                <p className='sm mt-4'>
+                                    From changing the operating system platform or the middleware
+                                    infrastructure to changing the version of the software solutions used, e-mail migration
+                                    to moving to a data center: IT infrastructures are subject to constant change. Life
+                                    cycles of only three to five years are not uncommon. This entails a large number of
+                                    complex migration and IT rollout projects - some with strong interdependencies. IT
+                                    rollout projects - some with strong interdependencies.
+                                </p>
                             </div>
                         </Col>
                     </Row>
                 </Container>
             </div>
-            <div>
+            <div className='mobileView'>
+            <div className='servicesBox my-3 mx-5 text-center'  data-aos="fade-in" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+                <div className='blue-bg' style={{minHeight:"2px"}}></div>
+                <div className='orange-bg p-4 mt-2'>
+                    <AiFillCalendar className='xxl white'/>
+                </div>
+                <h1 className='mt-4'>THE CHALLENGES</h1>
+                <p className='m-grey mt-2'>A successful completion of rollout and migration projects can only be guaranteed through well-planned and organized IT project management: in time, in budget and in quality .</p>
+                <p className='m-grey'>Central challenges are among others</p>
+                <p className='m-grey'>Complete recording of all relevant framework conditions and dependencies (e.g. application compatibility)</p>
+                <p className='m-grey'>Clear distribution of competencies and responsibilities for the affected components of the IT rollout</p>
+                <p className='m-grey'>Clean documentation for later operation</p>
+                <p className='m-grey'>Ensuring the acceptance of the affected and involved employees</p>
+                <div className='blue-bg mt-3' style={{minHeight:"2px"}}></div>
+                <h1 className='mt-4'>BEST SOLUTION TO THE CHALLENGES</h1>
+                <div className='blue-bg mt-3' style={{minHeight:"2px"}}></div>
+                <p className='m-grey mt-2'>A successful completion of rollout and migration projects can only be guaranteed through well-planned and organized IT project management: in time, in budget and in quality.</p>
+                <p className='m-grey'>Central challenges are among others</p>
+                <p className='m-grey'>Complete recording of all relevant framework conditions and dependencies (e.g. application compatibility)</p>
+            </div>
+            </div>
+            <div className='PC-View'>
                 <Container style={{ overflowX: "hidden", overflowY: "hidden" }}>
                     <Row data-aos="slide-right" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
                         <Col className='my-5' md={4}>
@@ -141,7 +187,17 @@ const rollout = () => {
                     </Row>
                 </Container>
             </div>
-            <div className='orange-bg m-3 p-5'>
+            <div className='mobileView orange-bg m-3 p-3'>
+            <h2 className='text-center white'>The First Thing We Do Is Build A Relationship</h2>
+                <p className='text-center white mx-3 mt-3'>
+                    Whether your employee is having issues, we are just a phone call away.<br/>Let us focus on keeping your IT infrastructure
+                    running smoothly,<br/>so you can focus on running your business with a new piece of mind.
+                </p>
+                <div className='text-center'>
+                    <button className='touch-btn'>Get In Touch</button>
+                </div>
+            </div>
+            <div className='PC-View orange-bg m-3 p-5'>
                 <h2 className='text-center white'>The First Thing We Do Is Build A Relationship</h2>
                 <p className='text-center white mx-5 mt-3'>
                     Whether your employee is having issues, we are just a phone call away.<br/>Let us focus on keeping your IT infrastructure
@@ -175,4 +231,4 @@ const rollout = () => {
     );
 };
 
-export default rollout;
+export default service;
