@@ -81,7 +81,7 @@ body {
 .blue-gradient-bg{
     background-color: #062241;
     background-image: linear-gradient(to right, #010e1b,#06213b , #06223b , #091d31 , #05213f);
-    max-height: 750px;
+    max-height: 100vh
 }
 .hero-text{
     margin-left:150px;
@@ -93,6 +93,22 @@ body {
         margin-right:15px;
     }
 }
+
+ @media screen and (max-width: 1300px) {
+    .size-flexible-one{
+         margin-bottom: 20px;
+         
+    }
+}
+/*@media screen and (min-width: 1300px) {
+    .size-flexible-one{
+         margin-top: 100px;
+         
+    }
+    .blue-gradient-bg{
+        max-height: 800px;
+    }
+} */
 
 .circle-one{
     position: relative;
@@ -142,8 +158,8 @@ body {
     position: relative;
     z-index: 1;
     top:-1750px;
-    left: 650px;
-    background-color: #ce6a40;
+    left: 50px;
+    background-color: #d36130;
     border-radius: 700px 0px 0px 800px;
     height: 1450px;
     width: 900px;
@@ -174,9 +190,9 @@ body {
     transition-duration: 800ms;
     position: relative;
     z-index: 2;
-    top:-3150px;
-    left: 690px;
-    background-color: #ce6a40;
+    top:-3250px;
+    left: 100px;
+    background-color: #dd6a38;
     border-radius: 700px 0px 0px 800px;
     height: 1450px;
     width: 900px;
@@ -195,13 +211,14 @@ body {
     top: 0px;
     z-index: 2;
     background-color: rgb(255, 255, 255);
-    height: 120px;
+    height: 170px;
 }
 
 .cards-space{
-    margin-left: 130px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-left: 100px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 .card-top-line{
     background-color: #023064;
@@ -210,6 +227,11 @@ body {
 .card-bottom-line{
     background-color: #cc5c2c;
     height: 5px;
+}
+.cdd{
+    box-shadow: 1px 27px 69px -37px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 27px 69px -37px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 27px 69px -37px rgba(0,0,0,0.75);
 }
 .card-border{
     border: 1px solid #023064;
@@ -258,11 +280,16 @@ body {
     background-color: #e46128;
     margin-top: 10px;
     margin-left: 15px;
-    width: 45px;
+    width: 5px;
 }
-.next-btn:hover{
-    transition-duration: 400ms;
-    background-color: #c9511d;
+.next-button-changed{
+    cursor: pointer;
+    background-color: #e46128;
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 45px;
+    height: 460px;
+
 }
 .next-btn:hover>.next-btn-icon{
     transition-duration: 400ms;

@@ -19,18 +19,18 @@ import MobileView from '../components/MobileView'
 
 export default function Home() {
 
-  const [box1, setBox1] = useState(false)
-  const [box2, setBox2] = useState(false)
+  const [box1, setBox1] = useState(false);
+  const [box2, setBox2] = useState(false);
 
-  const [boxHover1, setBoxHover1] = useState(false)
-  const [boxHover2, setBoxHover2] = useState(false)
-  const [boxHover3, setBoxHover3] = useState(false)
+  const [boxHover1, setBoxHover1] = useState(false);
+  const [boxHover2, setBoxHover2] = useState(false);
+  const [boxHover3, setBoxHover3] = useState(false);
+  const [rightButton, setButtonRight] = useState(false);
 
-  const [mobileView, setMobileView] = useState(false)
+  const [mobileView, setMobileView] = useState(false);
 
   useEffect(() => {
     aos.init();
-
   })
 
   return (
@@ -44,11 +44,13 @@ export default function Home() {
       <MobileView/>
     </div>
     <div className='PC-View'>
+
+
       <Container fluid>
       <Row className='justify-content-md-center blue-gradient-bg' style={{overflowY:"hidden",overflowX:"hidden"}}>
         <Col md={6} data-aos="slide-left" data-aos-duration="800" data-aos-once={true} data-aos-easing="ease-out-sine">
           <div className='my-5 py-5' style={{ alignContent:"end",textAlign:"end"}}>
-            <div className='hero-text'> 
+            <div className='hero-text size-flexible-one'>
             <h1 className='white four xxl'>
               Imagination, Ideation<br/> & Innovation,<br/> <span className='orange'>everything is<br/> possible!</span>
             </h1>
@@ -76,14 +78,16 @@ export default function Home() {
         </Col>
       </Row>
     </Container>
+
+
     <div className='services'>
       <div className='cards-space' style={{overflowX:"hidden"}}> 
-    <Row>
+      <Row>
         <Col md={5}>
         <Row>
         <Col md={6}>
           <div className='card-top-line my-2'></div>
-            <div  data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+            <div className='cdd' data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
               <div className='card-border'>
                 <div className='service-logo-bg' >
                   <BiMobileVibration className='service-logo' />
@@ -100,12 +104,11 @@ export default function Home() {
                   <button className='card-btn'> Read More </button>
                 </div>
               </div>
-            <div className='card-bottom-line my-2'></div>
             </div>
           </Col>
           <Col md={6}>
           <div className='card-top-line my-2'></div>
-            <div  data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+            <div className='cdd' data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
               <div className='card-border'>
                 <div className='service-logo-bg' >
                   <BiMobileVibration className='service-logo' />
@@ -122,7 +125,6 @@ export default function Home() {
                   <button className='card-btn'> Read More </button>
                 </div>
               </div>
-            <div className='card-bottom-line my-2'></div>
             </div>
           </Col>
         </Row>
@@ -131,7 +133,7 @@ export default function Home() {
         <Row>
         <Col md={6}>
           <div className='card-top-line my-2'></div>
-            <div  data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+            <div className='cdd' data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
               <div className='card-border'>
                 <div className='service-logo-bg' >
                   <BiMobileVibration className='service-logo' />
@@ -148,12 +150,11 @@ export default function Home() {
                   <button className='card-btn'> Read More </button>
                 </div>
               </div>
-            <div className='card-bottom-line my-2'></div>
             </div>
           </Col>
         <Col md={6}>
           <div className='card-top-line my-2'></div>
-            <div data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+            <div className='cdd' data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
               <div className='card-border'>
                 <div className='service-logo-bg' >
                   <BiMobileVibration className='service-logo' />
@@ -170,26 +171,31 @@ export default function Home() {
                   <button className='card-btn'> Read More </button>
                 </div>
               </div>
-            <div className='card-bottom-line my-2'></div>
             </div>
           </Col>
         </Row>
         </Col>
-        <Col md={1}>
-          <div className='next-btn' data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
-              <BiCaretRight className='next-btn-icon' />
-          </div>
+        <Col md={1} style={{cursor:"pointer"}} >
+        <div tyle={{width:"50px", height:"460px"}} onMouseEnter={()=>setButtonRight(true)} onMouseLeave={()=>setButtonRight(false)}>
+          {!rightButton && <div className={'next-btn'}>
+            
+          </div>}
+          {rightButton && <div className={'next-button-changed'}  data-aos="slide-right" data-aos-duration="350" data-aos-easing="ease-out">
+            <BiCaretRight className='next-btn-icon' data-aos="fade-right" data-aos-duration="450" data-aos-easing="ease-out" />
+          </div>}
+        </div>
         </Col>
       </Row>
-
       </div>
     </div>
+
+
     <div className='servicesV2 pt-5' data-aos="fade-up" data-aos-once={true}  data-aos-duration="500" data-aos-easing="ease-out-sine">
         <div className='s2-text text-center white xxl'>Imagination Ideation<span className='orange six'> is possible!</span></div>
         <div className='white text-center lg three'>Lorem Ipsum iahsdb iahsrdnai oujre sfnesi isenfiosfm iueufnesi osdfns disfnsi isdjfni </div>
         <Row className='justify-content-md-center' style={{width:"100%"}}>
           <Col className='mx-3' md="auto"  style={{padding:"0px", marginTop:"70px"}}>
-            <div className={boxHover1?'blue-box py-1':'white-box'} onMouseEnter={()=>setBoxHover1(true)} onMouseLeave={()=>setBoxHover1(false)}>
+            <div className={boxHover1?'blue-box':'white-box'} onMouseEnter={()=>setBoxHover1(true)} onMouseLeave={()=>setBoxHover1(false)}>
             <div className='white-box-top-text'>View More <span className='lg orange'><AiOutlineArrowRight/></span></div>
               <div className='box-space'>
                   <div style={{height:"40px"}}>WEBSITE</div>
@@ -198,7 +204,7 @@ export default function Home() {
             </div>
           </Col>
           <Col className='mx-3' md="auto"  style={{padding:"0px", marginTop:"70px"}}>
-          <div className={boxHover2?'blue-box py-1':'white-box'} onMouseEnter={()=>setBoxHover2(true)} onMouseLeave={()=>setBoxHover2(false)}> {/* blue-box */}
+          <div className={boxHover2?'blue-box':'white-box'} onMouseEnter={()=>setBoxHover2(true)} onMouseLeave={()=>setBoxHover2(false)}> {/* blue-box */}
               <div className='white-box-top-text'>View More <span className='lg orange'><AiOutlineArrowRight/></span></div>
               <div className='box-space'>
                   <div style={{height:"40px"}}>WEBSITE</div>
@@ -207,7 +213,7 @@ export default function Home() {
             </div>
           </Col>
           <Col className='mx-3' md="auto"  style={{padding:"0px", marginTop:"70px"}}> 
-          <div className={boxHover3?'blue-box py-1':'white-box'} onMouseEnter={()=>setBoxHover3(true)} onMouseLeave={()=>setBoxHover3(false)}>
+          <div className={boxHover3?'blue-box':'white-box'} onMouseEnter={()=>setBoxHover3(true)} onMouseLeave={()=>setBoxHover3(false)}>
           <div className='white-box-top-text'>View More <span className='lg orange'><AiOutlineArrowRight/></span></div>
               <div className='box-space'>
                   <div style={{height:"40px"}}>WEBSITE</div>
