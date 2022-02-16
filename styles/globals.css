@@ -217,8 +217,6 @@ body {
 .cards-space{
     margin-left: 100px;
     padding-left: 50px;
-    padding-top: 50px;
-    padding-bottom: 100px;
 }
 .card-top-line{
     background-color: #023064;
@@ -661,4 +659,22 @@ body {
     transition-duration: 300ms;
     background-color: #023064;
     color:white;
+}
+
+@media screen and (min-width: 1600px) {
+    .lg-alignment-left{
+        position: relative;
+        left: 20px;
+    }
+    .lg-alignment-right{
+        position: relative;
+        right: 80px;
+    }
+    .lg-alignment-right-btn{
+        position: relative;
+        right: 200px;
+    }
+    .lg-space{
+        height: 50px;
+    }
 }

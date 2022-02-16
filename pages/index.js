@@ -49,6 +49,7 @@ export default function Home() {
       <Container fluid>
       <Row className='justify-content-md-center blue-gradient-bg' style={{overflowY:"hidden",overflowX:"hidden"}}>
         <Col md={6} data-aos="slide-left" data-aos-duration="800" data-aos-once={true} data-aos-easing="ease-out-sine">
+        <div className='lg-space'></div>
           <div className='my-5 py-5' style={{ alignContent:"end",textAlign:"end"}}>
             <div className='hero-text size-flexible-one'>
             <h1 className='white four xxl'>
@@ -82,10 +83,12 @@ export default function Home() {
 
     <div className='services'>
       <div className='cards-space' style={{overflowX:"hidden"}}> 
-      <Row>
-        <Col md={5}>
-        <Row>
-        <Col md={6}>
+      <div style={{position:"relative",zIndex:"5", backgroundColor:"white", height:"50px"}}></div>
+      <Row className='text-center'>
+        <Col md={1} lg={1}></Col>
+        <Col md={5} lg={5}>
+        <Row  className='lg-alignment-left'>
+        <Col md={6} lg={5}>
           <div className='card-top-line my-2'></div>
             <div className='cdd' data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
               <div className='card-border'>
@@ -93,7 +96,7 @@ export default function Home() {
                   <BiMobileVibration className='service-logo' />
                 </div>
                 <div className='service-name-bg'>
-                    <div className='service-name my-4'>Application Development</div>
+                    <div className='service-name my-4'>Application Developments</div>
                 </div>
                 <div className='service-desc-bg'>
                   <div className='service-desc'>
@@ -106,53 +109,7 @@ export default function Home() {
               </div>
             </div>
           </Col>
-          <Col md={6}>
-          <div className='card-top-line my-2'></div>
-            <div className='cdd' data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
-              <div className='card-border'>
-                <div className='service-logo-bg' >
-                  <BiMobileVibration className='service-logo' />
-                </div>
-                <div className='service-name-bg'>
-                    <div className='service-name my-4'>Application Development</div>
-                </div>
-                <div className='service-desc-bg'>
-                  <div className='service-desc'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer.
-                  </div>
-                  <button className='card-btn'> Read More </button>
-                </div>
-              </div>
-            </div>
-          </Col>
-        </Row>
-        </Col>
-        <Col md={5}>
-        <Row>
-        <Col md={6}>
-          <div className='card-top-line my-2'></div>
-            <div className='cdd' data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
-              <div className='card-border'>
-                <div className='service-logo-bg' >
-                  <BiMobileVibration className='service-logo' />
-                </div>
-                <div className='service-name-bg'>
-                    <div className='service-name my-4'>Application Development</div>
-                </div>
-                <div className='service-desc-bg'>
-                  <div className='service-desc'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer.
-                  </div>
-                  <button className='card-btn'> Read More </button>
-                </div>
-              </div>
-            </div>
-          </Col>
-        <Col md={6}>
+          <Col md={6} lg={5}>
           <div className='card-top-line my-2'></div>
             <div className='cdd' data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
               <div className='card-border'>
@@ -175,8 +132,54 @@ export default function Home() {
           </Col>
         </Row>
         </Col>
-        <Col md={1} style={{cursor:"pointer"}} >
-        <div tyle={{width:"50px", height:"460px"}} onMouseEnter={()=>setButtonRight(true)} onMouseLeave={()=>setButtonRight(false)}>
+        <Col md={5} lg={5}>
+        <Row className='lg-alignment-right'>
+        <Col md={6} lg={5}>
+          <div className='card-top-line my-2'></div>
+            <div className='cdd' data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+              <div className='card-border'>
+                <div className='service-logo-bg' >
+                  <BiMobileVibration className='service-logo' />
+                </div>
+                <div className='service-name-bg'>
+                    <div className='service-name my-4'>Application Development</div>
+                </div>
+                <div className='service-desc-bg'>
+                  <div className='service-desc'>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer.
+                  </div>
+                  <button className='card-btn'> Read More </button>
+                </div>
+              </div>
+            </div>
+          </Col>
+        <Col md={6} lg={5}>
+          <div className='card-top-line my-2'></div>
+            <div className='cdd' data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+              <div className='card-border'>
+                <div className='service-logo-bg' >
+                  <BiMobileVibration className='service-logo' />
+                </div>
+                <div className='service-name-bg'>
+                    <div className='service-name my-4'>Application Development</div>
+                </div>
+                <div className='service-desc-bg'>
+                  <div className='service-desc'>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer.
+                  </div>
+                  <button className='card-btn'> Read More </button>
+                </div>
+              </div>
+            </div>
+          </Col>
+        </Row>
+        </Col>
+        <Col md={1} lg={1} style={{cursor:"pointer"}} className='lg-alignment-right-btn' >
+        <div style={{width:"50px", height:"460px"}} onMouseEnter={()=>setButtonRight(true)} onMouseLeave={()=>setButtonRight(false)}>
           {!rightButton && <div className={'next-btn'}>
             
           </div>}
