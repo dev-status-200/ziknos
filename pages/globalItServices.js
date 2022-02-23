@@ -51,18 +51,18 @@ const globalItServices = () => {
     </div>
     <div>
     <Container style={{overflowX:"hidden", overflowY:"hidden"}}>
-    <Row data-aos="slide-right" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+    <Row>
         <Col className='my-5' md={4}>
         <Row>
-            <Col xs={1} md={1}>
-                <div  className='blue-verticle-line bluish'></div>
+            <Col xs={1} md={1} style={{position:"relative",zIndex:"1", backgroundColor:"white", width:"10px"}}>
+                <div className='blue-verticle-line bluish' ></div>
             </Col>
-            <Col xs={10} md={10} className='orange-verticle-line'>
+            <Col xs={10} md={10} className='orange-verticle-line' data-aos="slide-right" data-aos-once={true} data-aos-delay="200" data-aos-duration="800" data-aos-easing="ease-out-sine">
                 <div className='text-center'> <AiFillCalendar className='white xxxl asset' /> </div>
             </Col>
         </Row>
         </Col>
-        <Col md={8} className='my-5'>
+        <Col md={8} className='my-5' data-aos="slide-right" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
             <h2>IT ASSET RECOVERY</h2>
             <p className='my-3 four m-grey sm-2'>
                 We are having plenty of Technicians for planned Rollout and Migration 
@@ -80,8 +80,8 @@ const globalItServices = () => {
             </Row>
         </Col>
     </Row>
-    <Row data-aos="slide-left" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
-        <Col md={8} className='my-5'>
+    <Row>
+        <Col md={8} className='my-5' data-aos="slide-left" data-aos-once={true} data-aos-duration="700" data-aos-easing="ease-out-sine">
             <h2 className='text-end mx-5'>IT ASSET RECOVERY</h2>
             <p className='my-3 four m-grey sm-2 text-end mx-5'>
                 We are having plenty of Technicians for planned Rollout and Migration 
@@ -100,27 +100,29 @@ const globalItServices = () => {
         </Col>
         <Col className='my-5' md={4}>
         <Row>
-            <Col xs={10} md={10} className='orange-verticle-line'>
+            <Col xs={10} md={10} className='orange-verticle-line' data-aos-once={true} data-aos="fade-left" data-aos-duration="500">
                 <div className='text-center'> <AiFillCalendar className='white xxxl asset' /> </div>
             </Col>
-            <Col xs={1} md={1}>
+            <Col xs={1} md={1} style={{position:"relative",zIndex:"1", backgroundColor:"white", width:"10px"}}>
                 <div  className='blue-verticle-line bluish'></div>
+            </Col>
+            <Col xs={1} md={1} style={{position:"relative",zIndex:"1", backgroundColor:"white", width:"10px"}}>
             </Col>
         </Row>
         </Col>
     </Row>
-    <Row data-aos="slide-right" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
+    <Row>
         <Col className='my-5' md={4}>
         <Row>
-            <Col xs={1} md={1}>
-                <div  className='blue-verticle-line bluish'></div>
+            <Col xs={1} md={1} style={{position:"relative",zIndex:"1", backgroundColor:"white", width:"10px"}}>
+                <div className='blue-verticle-line bluish' ></div>
             </Col>
-            <Col xs={10} md={10} className='orange-verticle-line'>
+            <Col xs={10} md={10} className='orange-verticle-line' data-aos="slide-right" data-aos-once={true} data-aos-delay="200" data-aos-duration="800" data-aos-easing="ease-out-sine">
                 <div className='text-center'> <AiFillCalendar className='white xxxl asset' /> </div>
             </Col>
         </Row>
         </Col>
-        <Col md={8} className='my-5'>
+        <Col md={8} className='my-5' data-aos="slide-right" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
             <h2>IT ASSET RECOVERY</h2>
             <p className='my-3 four m-grey sm-2'>
                 We are having plenty of Technicians for planned Rollout and Migration 
@@ -138,8 +140,8 @@ const globalItServices = () => {
             </Row>
         </Col>
     </Row>
-    <Row data-aos="slide-left" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
-        <Col md={8} className='my-5'>
+    <Row>
+        <Col md={8} className='my-5' data-aos="slide-left" data-aos-once={true} data-aos-duration="700" data-aos-easing="ease-out-sine">
             <h2 className='text-end mx-5'>IT ASSET RECOVERY</h2>
             <p className='my-3 four m-grey sm-2 text-end mx-5'>
                 We are having plenty of Technicians for planned Rollout and Migration 
@@ -158,11 +160,13 @@ const globalItServices = () => {
         </Col>
         <Col className='my-5' md={4}>
         <Row>
-            <Col xs={10} md={10} className='orange-verticle-line'>
+            <Col xs={10} md={10} className='orange-verticle-line' data-aos-once={true} data-aos="fade-left" data-aos-duration="500">
                 <div className='text-center'> <AiFillCalendar className='white xxxl asset' /> </div>
             </Col>
-            <Col xs={1} md={1}>
+            <Col xs={1} md={1} style={{position:"relative",zIndex:"1", backgroundColor:"white", width:"10px"}}>
                 <div  className='blue-verticle-line bluish'></div>
+            </Col>
+            <Col xs={1} md={1} style={{position:"relative",zIndex:"1", backgroundColor:"white", width:"10px"}}>
             </Col>
         </Row>
         </Col>
