@@ -81,14 +81,16 @@ const globalItServices = () => {
         </Col>
     </Row>
     <Row>
-        <Col md={8} className='my-5' data-aos="slide-left" data-aos-once={true} data-aos-duration="700" data-aos-easing="ease-out-sine">
-            <h2 className='text-end mx-5'>IT ASSET RECOVERY</h2>
-            <p className='my-3 four m-grey sm-2 text-end mx-5'>
-                We are having plenty of Technicians for planned Rollout and Migration 
-                Projects and offer complete 24/7 support as per Client's desire. We are 
-                having plenty of Technicians for planned Rollout and Migration Projects 
-                and offer complete 24/7 support as per Client's desire.
-            </p>
+        <Col md={8} className='my-5' data-aos="slide-left" data-aos-once={true} data-aos-duration="700" data-aos-easing="ease-out-sine" >
+        <div style={{transitionDelay:"500ms"}}>
+        <h2 className='text-end mx-5'>IT ASSET RECOVERY</h2>
+        <p className='my-3 four m-grey sm-2 text-end mx-5'>
+        We are having plenty of Technicians for planned Rollout and Migration 
+        Projects and offer complete 24/7 support as per Client's desire. We are 
+        having plenty of Technicians for planned Rollout and Migration Projects 
+        and offer complete 24/7 support as per Client's desire.
+        </p>
+        </div>    
             <Row>
                 <Col md={9}>
                     <div className='line-2 my-4'></div>
@@ -100,13 +102,11 @@ const globalItServices = () => {
         </Col>
         <Col className='my-5' md={4}>
         <Row>
-            <Col xs={10} md={10} className='orange-verticle-line' data-aos-once={true} data-aos="fade-left" data-aos-duration="500">
+            <Col md={10} className='orange-verticle-line' data-aos-once={true} data-aos="fade-left" data-aos-duration="500">
                 <div className='text-center'> <AiFillCalendar className='white xxxl asset' /> </div>
             </Col>
-            <Col xs={1} md={1} style={{position:"relative",zIndex:"1", backgroundColor:"white", width:"10px"}}>
+            <Col md={2} style={{position:"relative",zIndex:"1", backgroundColor:"white", width:"30px", right:"-20px"}}>
                 <div  className='blue-verticle-line bluish'></div>
-            </Col>
-            <Col xs={1} md={1} style={{position:"relative",zIndex:"1", backgroundColor:"white", width:"10px"}}>
             </Col>
         </Row>
         </Col>

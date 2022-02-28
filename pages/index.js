@@ -178,7 +178,7 @@ export default function Home() {
           </Col>
         </Row>
         </Col>
-        <Col md={1} lg={1} style={{cursor:"pointer"}} className='lg-alignment-right-btn' >
+        <Col md={1} lg={1} style={{cursor:"pointer"}} className='lg-alignment-right-btn' data-aos="slide-down" data-aos-once={true} data-aos-duration="800" data-aos-easing="ease-out-sine">
         <div style={{width:"50px", height:"460px"}} onMouseEnter={()=>setButtonRight(true)} onMouseLeave={()=>setButtonRight(false)}>
           {!rightButton && <div className={'next-btn'}>
             
